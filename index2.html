@@ -12,34 +12,47 @@
   <link href="https://fonts.googleapis.com/css?family=Handlee|Shadows+Into+Light" rel="stylesheet">
 
   <title>Triage ER List</title>
-
 </head>
 
 <body>
   <div class ="container">
     <div class="jumbotron mt-5 image">
         <h1 class="display-4 text-center">Hello!  Welcome to our Hospital! </h1>
-        <p class="lead text-center">New patients please enter your information.</p>
+        <p class="lead text-center">New patients please enter your information below.</p>
         <hr class="my-4">
+
+        <form action="javascript:void(0);" method="POST" onsubmit="patientApp.Add()">
+            <input type="text" id="add-name" placeholder="New Patient">
+            <input class="btn btn-warning" type="submit" value="Add">
+        </form>
+    
+          <div id="spoiler" role="aria-hidden">
+            <form action="javascript:void(0);" method="POST" id="saveEdit">
+              <input type="text" id="edit-name">
+              <input class="btn btn-secondary" type="submit" value="Edit" /> <a onclick="CloseInput()"> </a>
+            </form>
+           </div>
 
       <p id="counter"></p>
 
-      <!-- <table>
+      <table>
         <tr>
           <th>Patient Name</th>
         </tr>
         <tbody id="patientList">
         </tbody>
 
-      </table> -->
+      </table>
 
-  </div>
+ 
+    </div>
+</div>
 
 
 
 
   <!--JS Link -->
-  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/app2.js"></script>
 
 
 

@@ -1,0 +1,29 @@
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+  #spoiler{
+    display: none;
+  }
+  body{
+    background-color: black;
+    background-image:url("../images/pic1.jpg");
+    background-position: center;
+    background-size: 50%;
+  }
+
+   .image{
+    background-color: red !important;
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Handlee', cursive;
+    
+  }
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+table th{
+    width: 50%;
+}
